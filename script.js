@@ -6,22 +6,27 @@ var flag = 0
 addFirend.addEventListener("click",function()
 {
   if(flag == 0) {
-
-    istatus.style.color = "black "
-
-    istatus.innerHTML = "Friends"
-    addFirend.innerHTML = " Cencel Request"
+    setTimeout(() => {
+      
+      istatus.style.color = "black "
+      
+      istatus.innerHTML = "Friends"
+      addFirend.innerHTML = " Cencel Request"
+    }, 450);
     
     
     flag = 1
   } else {
-    addFirend.innerHTML = "Add Friend"
-    addFirend.innerHTML = "cencel"
-      istatus.innerHTML = "Cencel Request"
-      addFirend.style.backgroudColo = "red"
+    setTimeout(() => {
+      
+      addFirend.innerHTML = "Add Friend"
+      addFirend.innerHTML = "cencel"
+      istatus.innerHTML = "Request Cenceled"
+    }, 450);
       flag = 0
   }
 })
+
 
 
 
@@ -59,8 +64,7 @@ addFirend2.addEventListener("click",function()
 {
   istatus2.style.color = "black "
   istatus2.innerHTML = "Friends"
-   addFirend2.innerHTML = "Friends"
-   addFirend2.style.backgroudColor = "red"
+   addFirend2.innerHTML = "Friends" 
 })
 
 
@@ -73,6 +77,3 @@ remov.addEventListener("click", function() {
   remov.style.backgroudColor = "red"
 })
 
-
-
- 
